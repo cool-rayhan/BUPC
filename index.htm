@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barishal University Physics Club (BUPC)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background:  url(G:/BUPC/BUPC/bg.png) no-repeat center center;
+            background-size: cover;
+            background-attachment:  scroll;
+            color: #ffffff;
+        }
+
+        header {
+            background: linear-gradient(to right, #159E00, #E03500);
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        header img {
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            width: 100px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #1b1b1b;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: #00ffcc;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 1em;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #C26173;
+        }
+
+        main {
+            padding: 2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 2em auto;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            margin: 2em 0;
+        }
+
+        section h2 {
+            color: #00ffcc;
+            text-align: center;
+            font-size: 2em;
+            border-bottom: 2px solid #0044cc;
+            padding-bottom: 0.5em;
+        }
+
+        footer {
+            background: #3B3055;
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            position:  relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #00ffcc;
+            text-decoration: none;
+        }
+        .physics-background {
+            padding: 4em 2em;
+            color: white;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .announcements, .about-bupc {
+            text-align: center;
+            color: white;
+        }
+        .content {
+            padding: 40px 70px;
+        }
+        .card {
+            background: #2c2c2c;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-20px);
+        }
+
+        .quick-links ul {
+            list-style: none;
+            text-align: center;
+            color: white;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .quick-links ul li a {
+            background-color: #0044cc;
+            color: white;
+            text-decoration: none;
+            padding: 1em 2em;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .quick-links ul li a:hover {
+            background-color: #FF702D;
+            transform: translateY(-10px);
+        }
+
+        .nucleus-team ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .nucleus-team ul li {
+            margin: 1em;
+            text-align: center;
+        }
+
+         .nucleus-team ul li:hover {
+            transform: translateY(-10px);
+        }
+
+        .nucleus-team ul li img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 0.5em;
+        }
+
+        .nucleus-team ul li strong {
+            color: #00ffcc;
+            display: block;
+            margin-top: 0.5em;
+        }
+
+        /* Background animation */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit;
+            filter: blur(8px);
+            z-index: -1;
+            pointer-events: none;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="G:/BUPC/BUPC/BUPC LOGO.png" alt="BUPC Logo">
+        <h1>Barishal University Physics Club (BUPC)</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="physics-background">
+            <h2>Welcome to BUPC</h2>
+            <p>Exploring the wonders of physics together.</p>
+        </section>
+        <section class="announcements">
+            <h2>Announcements</h2>
+            <p>Stay tuned for upcoming events and announcements!</p>
+        </section>
+        <section class="content" id="about">
+        <div class="card">
+            <h2>About BUPC</h2>
+
+                <h4>Welcome to Barishal University Physics Club (BUPC)</h4>
+                <p>Unleashing the Passion for Physics at Barishal University</p>
+                <p>At Barishal University Physics Club (BUPC), we are a vibrant community of physics enthusiasts, united by a shared curiosity for the universe's profound mysteries. We are driven by a passion to explore the depths of physics, to unravel the secrets of the cosmos, and to share our knowledge with the world around us.</p>
+                <h3>Founded by a Visionary Team</h3>
+                <p>BUPC was born from the vision of a remarkable group of individuals:</p>
+              <h4 style=" color: #52CC91" > Al Amin, Al Wasif, Pranto Das, Elias Hossain Abid, Abdul Hafiz Tamim, Md. Sabbir Ahmed, Amjad Hossain, Abdullah Al Sawon, Rayhan Miah, Abu Sadat, and Md. Tanvir Islam Rafi.</h4>
+                <p>These founding members laid the foundation for our club, fostering an environment where intellectual curiosity, collaborative learning, and a passion for physics thrive.</p>
+                <h3>Our Mission: Igniting a Passion for Physics</h3>
+                <p>BUPC is dedicated to providing a platform for students to delve deeper into the world of physics, beyond the confines of the classroom. We strive to:</p>
+                <ul>
+                    <li>Nurture a Collaborative Learning Environment: We facilitate study groups, workshops, and guest lectures to foster a collaborative learning environment where students can expand their understanding of physics concepts and problem-solving techniques.</li>
+                    <li>Cultivate a Vibrant Physics Community: We organize social events, discussions, and networking opportunities to connect fellow physics enthusiasts, fostering a sense of camaraderie and shared passion.</li>
+                    <li>Promote Physics Education and Outreach: We actively engage in outreach programs, delivering presentations at schools and science fairs to inspire the next generation of physicists and ignite their curiosity about the wonders of the universe.</li>
+                </ul>
+                <p>Join Us on a Journey of Discovery</p>
+                <p>If you share our passion for physics and seek an environment to explore the wonders of the universe, we invite you to join Barishal University Physics Club. Together, we will embark on a journey of discovery, unraveling the mysteries of physics and expanding our understanding of the cosmos.</p>
+            </div>
+        </section>
+        <section class="quick-links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="events.html">Upcoming Events</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </section>
+        <section class="nucleus-team">
+            <h2>Nucleus Team</h2>
+            <ul>
+                <li>
+                    <img src="G:/BUPC/BUPC/alamin.jpg" alt="Al Amin">
+                    <strong>Al Amin</strong>
+                </li>
+                <li>
+                    <img src="G:/BUPC/BUPC/Wasif.jpg" alt="Al Wasif">
+                    <strong>Al Wasif</strong>
+                </li>
+                <li>
+                    <img src="G:/BUPC/BUPC/Pranto.jpg" alt="Pranto Das">
+                    <strong>Pranto Das</strong>
+                </li>
+                <li>
+                    <img src="G:/BUPC/BUPC/Ellias.jpg" alt="Elias Hossain Abid">
+                    <strong>Elias Hossain Abid</strong>
+                </li>
+                <li>
+                    <img src="G:/BUPC/BUPC/Tamim.jpg" alt="Abdul Hafiz Tamim">
+                    <strong>Abdul Hafiz Tamim</strong>
+                </li>
+                <li>
+                    <img src="G:/BUPC/BUPC/Sabbir.jpg" alt="Md. Sabbir Ahmed">
+                    <strong>Md. Sabbir Ahmed</strong>
+                </li>
+                <li>
+                    <img src="G:/BUPC/BUPC/Amzad.jpg" alt="Amjad Hossain">
+                    <strong>Amjad Hossain</strong>
+                </li>
+                <li>
+                    <img src="G:/BUPC/BUPC/Sawon.jpg" alt="Abdullah Al Sawon">
+                    <strong>Abdullah Al Sawon</strong>
+                </li>
+                <li>
+                    <img src="G:/BUPC/BUPC/Warm+Virtual+Headshot+OFfice+Background.jpg" alt="Rayhan Miah">
+                    <strong>Rayhan Miah</strong>
+                </li>
+                <li>
+                    <img src="G:/BUPC/BUPC/sadat.jpg" alt="Abu Sadat">
+                    <strong>Abu Sadat</strong>
+                </li>
+                <li>
+                    <img src="G:/BUPC/BUPC/Rafi.jpg" alt="Md. Tanvir Islam Rafi">
+                    <strong>Md. Tanvir Islam Rafi</strong>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Barishal University Physics Club. All rights reserved.</p>
+        <p>Follow us on <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+    </footer>
+</body>
+</html>
